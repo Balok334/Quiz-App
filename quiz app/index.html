@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Seru untuk Anak</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="header">
+        <h1>🎮 Kuis Seru Anak Pintar 🎉</h1>
+        <p>Ayo jawab pertanyaan-pertanyaan berikut!</p>
+      </div>
+
+      <div class="score-time">
+        <div>Skor: <span id="score">0</span></div>
+        <div>Waktu: <span id="timer" class="timer">30</span>s</div>
+      </div>
+
+      <div id="start-screen" class="question-box">
+        <button onclick="startQuiz()">Mulai Kuis! 🚀</button>
+      </div>
+
+      <div id="quiz-screen" class="hidden">
+        <div class="question-box">
+          <div class="question" id="question"></div>
+          <div class="options" id="options"></div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="hidden result-screen">
+        <h2>Selamat! 🎉</h2>
+        <p>Skor Akhir Kamu: <span id="final-score">0</span></p>
+        <button onclick="location.reload()">Main Lagi! 🔄</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
